@@ -1,9 +1,10 @@
-function takeANumber(deliLine, name)
+var n = 0;
+
+function takeANumber(deliLine)
 {
-  deliLine.push(name);
-  var n = deliLine.length;
-  var welcome = "Welcome, " + name + ". You are number " + n + " in line.";
-  return welcome;
+  n++;
+  deliLine.push(n);
+  return "Now serving: " + n;
 }
 
 function nowServing(deliLine)
